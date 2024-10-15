@@ -55,7 +55,7 @@
 					vaultManager: $dropinUi.dataset.manage,
 					translations: {
 						postalCodeLabel: 'Billing Zip Code'
-					}
+					},
 					card: {
 						cardholderName: {
 							required: true
