@@ -53,6 +53,9 @@
 					container: $dropinUi,
 					locale: $dropinUi.dataset.locale,
 					vaultManager: $dropinUi.dataset.manage,
+					translations: {
+						postalCodeLabel: 'Billing Zip Code'
+					}
 					card: {
 						cardholderName: {
 							required: true
@@ -63,9 +66,9 @@
 						}
 					}
 				};
-				if ($dropinUi.dataset.translations != '') {
-					options.translations = JSON.parse($dropinUi.dataset.translations);
-				}
+// 				if ($dropinUi.dataset.translations != '') {
+// 					options.translations = JSON.parse($dropinUi.dataset.translations);
+// 				}
 
 				if (Boolean($dropinUi.dataset.subscription) != true) {
 					options.paypal = {
